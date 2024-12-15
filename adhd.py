@@ -321,11 +321,14 @@ elif app_mode == 'Data Visualization':
 elif app_mode == 'Model Information':
     st.markdown("""
     <div style='text-align: center;'>
-        <h1 style='color: darkblue;'>Model Information</h1>
+        <h1 style='color: darkblue;'>⚙️ Model Information</h1>
     </div>
     """, unsafe_allow_html=True)
     
-
+    st.write("""
+        The ADHD prediction model behind this app uses machine learning to analyze various factors that may indicate ADHD symptoms.
+        
+        """)
 
     st.markdown("""
     <div>
@@ -334,27 +337,58 @@ elif app_mode == 'Model Information':
     """, unsafe_allow_html=True)
 
     st.write("""
-        The ADHD prediction model behind this app uses machine learning to analyze various factors that may indicate ADHD symptoms. By entering details about demographics, mental health, and academic performance, users receive an ADHD score. This score provides insights into potential ADHD symptoms, helping students identify areas where they may need support.
-
+        By entering details about demographics, mental health, and academic performance, the app generates an ADHD score. This score helps students understand potential ADHD symptoms and identify areas where support may be needed.
+        
         """)
-
+    st.header('Dataset')
     st.markdown("""
     <div>
-        <h3 style='color: Black;'>Sections in This App</h3>
+        <h3 style='color: Black;'>🔬 Model Training Details</h3>
     </div>
     """, unsafe_allow_html=True)
 
 
-    st.write("""
-        
-        - Prediction: Enter your information and receive a personalized ADHD score based on our predictive model.
-        - Data Visualization: Explore visual insights and trends in the dataset, such as correlations between ADHD symptoms and academic performance.
-        - Model Information: Learn about the technical aspects of the model used for predictions, including its accuracy and key features.
-        - Resources and Support: Access helpful resources on ADHD and tips for managing academic challenges.
-        - About: Find out more about the research project and the motivation behind this application. 
- 
-    """)
+    st.write(
+    """
+    The model was trained using the dataset from Kaggle's ADHD and Mental Health dataset. 
+    The dataset includes information on academic performance, behavioral data, and mental health factors.
+    """
+)
 
+# Adding a link to the dataset
+st.markdown(
+    "[Kaggle's ADHD and Mental Health Dataset](https://www.kaggle.com/datasets/xyz/adhd-mental-health)"
+)
+
+st.header('Algorithms Used')
+st.write(
+    """
+    The model uses a combination of the following supervised learning algorithms to make predictions based on the input data:
+    - Linear Regression
+    - Decision Tree
+    - Random Forest
+    - Support Vector Regressor
+    - Gradient Boosting
+    """
+)
+
+st.header('Training Process')
+st.write(
+    """
+    The data was split into training and testing sets to evaluate model performance. 
+    10-fold cross-validation was applied to ensure that the model generalizes well to new, unseen data.
+    """
+)
+
+st.header('Performance Evaluation')
+st.write(
+    """
+    As this is a regression model, the following evaluation metrics were used to assess model performance:
+    - Mean Squared Error (MSE)
+    - Mean Absolute Error (MAE)
+    - R-squared (R²) Score
+    """
+)
 
 
 
