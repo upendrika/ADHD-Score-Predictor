@@ -330,24 +330,18 @@ elif app_mode == 'Model Information':
         
         """)
 
-    st.markdown("""
-    <div>
-        <h3 style='color: Black;'>How the Model Works</h3>
-    </div>
-    """, unsafe_allow_html=True)
-
     st.write("""
         By entering details about demographics, mental health, and academic performance, the app generates an ADHD score. This score helps students understand potential ADHD symptoms and identify areas where support may be needed.
         
         """)
-    st.header('Dataset')
+    
     st.markdown("""
     <div>
         <h3 style='color: Black;'>🔬 Model Training Details</h3>
     </div>
     """, unsafe_allow_html=True)
 
-
+    st.header('Dataset')
     st.write(
     """
     The model was trained using the dataset from Kaggle's ADHD and Mental Health dataset. 
