@@ -355,40 +355,40 @@ elif app_mode == 'Model Information':
     """
 )
 
-# Adding a link to the dataset
-st.markdown(
-    "[Kaggle's ADHD and Mental Health Dataset](https://www.kaggle.com/datasets/xyz/adhd-mental-health)"
-)
-
-st.header('Algorithms Used')
-st.write(
-    """
-    The model uses a combination of the following supervised learning algorithms to make predictions based on the input data:
-    - Linear Regression
-    - Decision Tree
-    - Random Forest
-    - Support Vector Regressor
-    - Gradient Boosting
-    """
-)
-
-st.header('Training Process')
-st.write(
-    """
-    The data was split into training and testing sets to evaluate model performance. 
-    10-fold cross-validation was applied to ensure that the model generalizes well to new, unseen data.
-    """
-)
-
-st.header('Performance Evaluation')
-st.write(
-    """
-    As this is a regression model, the following evaluation metrics were used to assess model performance:
-    - Mean Squared Error (MSE)
-    - Mean Absolute Error (MAE)
-    - R-squared (R²) Score
-    """
-)
+    # Adding a link to the dataset
+    st.markdown(
+        "[Kaggle's ADHD and Mental Health Dataset](https://www.kaggle.com/datasets/xyz/adhd-mental-health)"
+    )
+    
+    st.header('Algorithms Used')
+    st.write(
+        """
+        The model uses a combination of the following supervised learning algorithms to make predictions based on the input data:
+        - Linear Regression
+        - Decision Tree
+        - Random Forest
+        - Support Vector Regressor
+        - Gradient Boosting
+        """
+    )
+    
+    st.header('Training Process')
+    st.write(
+        """
+        The data was split into training and testing sets to evaluate model performance. 
+        10-fold cross-validation was applied to ensure that the model generalizes well to new, unseen data.
+        """
+    )
+    
+    st.header('Performance Evaluation')
+    st.write(
+        """
+        As this is a regression model, the following evaluation metrics were used to assess model performance:
+        - Mean Squared Error (MSE)
+        - Mean Absolute Error (MAE)
+        - R-squared (R²) Score
+        """
+    )
 
 
 
