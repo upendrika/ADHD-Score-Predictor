@@ -55,4 +55,19 @@ Discover the motivation behind this application, including its connection to a *
 ### 🚀 Get Started  
 1. Clone this repository:  
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/upendrika/ADHD-Score-Predictor.git
+
+2. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+
+3. Run the app locally:
+   ```bash
+   streamlit run adhd.py
+
+### ✨ Stay Connected  
+For any questions or feedback, feel free to reach out to us at:  
+
+📧 **Email**: isharaupendrika22@gmail.com
+
+🌐 **ADHD web app**: https://adhd-score-predictor-webapp.streamlit.app/ 
