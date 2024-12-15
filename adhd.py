@@ -383,6 +383,7 @@ elif app_mode == 'Model Information':
         - R-squared (R²) Score
         """
     )
+    st.image("evaluation.png", caption="Evaluation Metrics", width=150, use_column_width=False)
 
 
 
