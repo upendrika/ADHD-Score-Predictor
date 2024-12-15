@@ -98,7 +98,7 @@ if app_mode == 'Home':
     
     st.markdown("""
     <div>
-        <h3 style='color: Black;'>🎯 Purpose</h3>
+        <h3 style='color: Black;'>Purpose</h3>
     </div>
     """, unsafe_allow_html=True)
 
@@ -111,7 +111,7 @@ if app_mode == 'Home':
     
     st.markdown("""
     <div>
-        <h3 style='color: Black;'>🧠 What is <span style='color: red;'>ADHD</span>?</h3>
+        <h3 style='color: Black;'>What is <span style='color: red;'>ADHD</span>?</h3>
     </div>
     """, unsafe_allow_html=True)
 
@@ -146,7 +146,7 @@ if app_mode == 'Home':
 elif app_mode == 'Prediction':
     st.markdown("""
     <div style='text-align: center;'>
-        <h1 style='color: darkblue;'>💡 ADHD Score Predictor</h1>
+        <h1 style='color: darkblue;'>ADHD Score Predictor</h1>
     </div>
     """, unsafe_allow_html=True)
   
@@ -191,7 +191,7 @@ elif app_mode == 'Prediction':
     
 
     st.markdown("---")  # Horizontal line
-    st.markdown("<h3 style='text-align: center; color: darkblue;'>📊 Prediction Results</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center; color: darkblue;'>Prediction Results</h3>", unsafe_allow_html=True)
 
     col1, col2 = st.columns([1, 1]) 
     with col1:
@@ -223,7 +223,7 @@ elif app_mode == 'Prediction':
 elif app_mode == 'Data Visualization': 
     st.markdown("""
     <div style='text-align: center;'>
-        <h1 style='color: darkblue;'>📈 Data Visualization</h1>
+        <h1 style='color: darkblue;'>Data Visualization</h1>
     </div>
     """, unsafe_allow_html=True)
     
@@ -321,7 +321,7 @@ elif app_mode == 'Data Visualization':
 elif app_mode == 'Model Information':
     st.markdown("""
     <div style='text-align: center;'>
-        <h1 style='color: darkblue;'>⚙️ Model Information</h1>
+        <h1 style='color: darkblue;'>Model Information</h1>
     </div>
     """, unsafe_allow_html=True)
     
@@ -337,7 +337,7 @@ elif app_mode == 'Model Information':
     
     st.markdown("""
     <div>
-        <h3 style='color: Black;'>🔬 Model Training Details</h3>
+        <h3 style='color: Black;'>Model Training Details</h3>
     </div>
     """, unsafe_allow_html=True)
 
@@ -396,13 +396,13 @@ elif app_mode == 'Model Information':
 elif app_mode == 'Resources and Support':
     st.markdown("""
     <div style='text-align: center;'>
-        <h1 style='color: darkblue;'>📚 Resources and Support</h1>
+        <h1 style='color: darkblue;'>Resources and Support</h1>
     </div>
     """, unsafe_allow_html=True)
     
     st.markdown("""
     <div>
-        <h3 style='color: Black;'> 🎓 Managing ADHD in University Life</h3>
+        <h3 style='color: Black;'>Managing ADHD in University Life</h3>
     </div>
     """, unsafe_allow_html=True)
 
@@ -419,7 +419,7 @@ elif app_mode == 'Resources and Support':
 
     st.markdown("""
     <div>
-        <h3 style='color: Black;'>🌐 Helpful Online Resources</h3>
+        <h3 style='color: Black;'>Helpful Online Resources</h3>
     </div>
     """, unsafe_allow_html=True)
 
@@ -432,7 +432,7 @@ elif app_mode == 'Resources and Support':
 
     st.markdown("""
     <div>
-        <h3 style='color: Black;'>👨‍👩‍👧‍👦 Tips for Parents and Educators</h3>
+        <h3 style='color: Black;'>Tips for Parents and Educators</h3>
     </div>
     """, unsafe_allow_html=True)
            
@@ -459,7 +459,7 @@ elif app_mode == 'About':
 
     st.markdown("""
     <div>
-        <h3 style='color: Black;'>💡 The Motivation Behind This Application</h3>
+        <h3 style='color: Black;'>The Motivation Behind This Application</h3>
     </div>
     """, unsafe_allow_html=True)
 
@@ -471,7 +471,7 @@ elif app_mode == 'About':
 
     st.markdown("""
     <div>
-        <h3 style='color: Black;'>🎯 My Mission</h3>
+        <h3 style='color: Black;'>My Mission</h3>
     </div>
     """, unsafe_allow_html=True)
 
@@ -482,7 +482,7 @@ elif app_mode == 'About':
 
     st.markdown("""
     <div>
-        <h3 style='color: Black;'>🛠️ Development</h3>
+        <h3 style='color: Black;'>Development</h3>
     </div>
                 
     """, unsafe_allow_html=True)
@@ -494,7 +494,7 @@ elif app_mode == 'About':
 
     st.markdown("""
     <div>
-        <h3 style='color: Black;'>🌟 Acknowledgments </h3>
+        <h3 style='color: Black;'>Acknowledgments </h3>
     </div>
     """, unsafe_allow_html=True)
 
