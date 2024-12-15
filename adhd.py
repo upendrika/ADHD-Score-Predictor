@@ -11,7 +11,7 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import LabelEncoder
 import plotly.express as px
 
-st.set_page_config(layout="wide")
+#st.set_page_config(layout="wide")
 @st.cache_data
 def load_data():
     df = pd.read_csv("ADHD.csv")
