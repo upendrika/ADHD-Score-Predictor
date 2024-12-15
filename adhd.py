@@ -383,21 +383,8 @@ elif app_mode == 'Model Information':
         - R-squared (R²) Score
         """
     )
-    st.markdown(
-    """
-    <style>
-        .center-img {
-            display: flex;
-            justify-content: center;
-        }
-    </style>
-    <div class="center-img">
-        <img src="evaluation.png" alt="Evaluation Metrics" width="500">
-    </div>
-    """, 
-    unsafe_allow_html=True
-    )
-
+    
+    st.markdown("<div style='text-align: center;'><img src='evaluation.png' width='500'/></div>", unsafe_allow_html=True)
     st.write(
         """
         In evaluation, the best model is selected based on the combination of these metrics. For instance, if Linear Regression has the lowest MSE, MAE and the highest R2 score among all models, it would be considered the best-performing model.
