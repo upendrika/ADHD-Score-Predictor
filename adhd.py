@@ -385,14 +385,18 @@ elif app_mode == 'Model Information':
     )
     st.markdown(
     """
-    <div style="display: flex; justify-content: center;">
+    <style>
+        .center-img {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <div class="center-img">
         <img src="evaluation.png" alt="Evaluation Metrics" width="500">
     </div>
     """, 
     unsafe_allow_html=True
     )
-
-    st.caption("Evaluation Metrics")
 
     st.write(
         """
