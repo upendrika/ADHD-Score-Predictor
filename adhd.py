@@ -166,19 +166,19 @@ elif app_mode == 'Prediction':
         age = st.number_input("Age", min_value=0, max_value=100, step=1)
         sex = st.radio("Sex", options=[0, 1], format_func=lambda x: "Female" if x == 0 else "Male")
         previous_state = st.radio("Previous State (0=No, 1=Yes)", options=[0, 1])
-        depression_total = st.number_input("Depression Total", min_value=0.0)
-        alcohol_total = st.number_input("Alcohol Total", min_value=0.0)
+        depression_total = st.number_input("Depression Total", min_value=0)
+        alcohol_total = st.number_input("Alcohol Total", min_value=0)
     with col2:
 
-        aas1_total = st.number_input("AAS1 Total", min_value=0.0)
-        university_performance = st.number_input("University Performance", min_value=0.0)
+        aas1_total = st.number_input("AAS1 Total", min_value=0)
+        university_performance = st.number_input("University Performance", min_value=0)
         
         # Adding space between the inputs
         st.markdown("<br>", unsafe_allow_html=True)
 
-        high_school_performance = st.number_input("High School Performance", min_value=0.0)
-        anxiety_total = st.number_input("Anxiety Total", min_value=0.0)
-        aas_change = st.number_input("AAS Change", min_value=0.0)
+        high_school_performance = st.number_input("High School Performance", min_value=0)
+        anxiety_total = st.number_input("Anxiety Total", min_value=0)
+        aas_change = st.number_input("AAS Change", min_value=-100.0, value=0.00, format="%.4f")
 
     # Right column for output
     score = None
@@ -187,37 +187,35 @@ elif app_mode == 'Prediction':
             score = predict_adhd_score(age, sex, previous_state, depression_total, alcohol_total,
                                        aas1_total, university_performance, high_school_performance,
                                        anxiety_total, aas_change)
-            # ADHD Category Visualization
-            category = "At Risk" if score > 24 else "Normal"
-            categories = ["Normal", "At Risk"]
-            values = [1 if category == "Normal" else 0, 1 if category == "At Risk" else 0]
-            
+    
+    
+
     st.markdown("---")  # Horizontal line
     st.markdown("<h3 style='text-align: center; color: darkblue;'>Prediction Results</h3>", unsafe_allow_html=True)
 
-    col1, col2 = st.columns([1, 1])
-
+    col1, col2 = st.columns([1, 1]) 
     with col1:
         if score is not None:
-            #st.write("Prediction result will be shown here.")
-            st.write(f"Predicted ADHD Score: {score:.2f}")
+            
+            st.markdown(f"<h2 style='font-weight: bold; font-size: 24px;'>Predicted ADHD Score: {score:.2f}</h2>", unsafe_allow_html=True)
             st.markdown("<br>", unsafe_allow_html=True)
-    
-            fig = px.pie(names=categories, values=values, title="ADHD Category Distribution", color=categories,
-                        color_discrete_map={"Normal": "green", "At Risk": "red"})
-            fig.update_layout(title={'x': 0.25}) 
-            st.plotly_chart(fig)
 
-    with col2:
-        if score is not None:
-            # Display ADHD result and GIF
             if score > 24:
                 st.error("Possible ADHD symptoms detected. Consult a professional.")
-                st.image("adhd_positive.gif", caption="Take Action for Better Mental Health")
+                st.image("adhd_positive.png", caption="Take Action for Better Mental Health", width=500)
             else:
                 st.success("No significant ADHD symptoms detected. Stay mindful.")
-                st.image("adhd_negative.gif", caption="Keep Up the Good Work!")
+                st.image("adhd_negative.png", caption="Keep Up the Good Work!", width=500)
 
+    with col2:
+
+        st.markdown("<br><br><br>", unsafe_allow_html=True)
+        
+        st.markdown("""
+            
+            - When the ADHD score is <span style="color:red; font-weight:bold;">greater than 24</span>, the student is considered <span style="color:red; font-weight:bold;">'At Risk'</span> for ADHD symptoms.
+            - When the ADHD score is <span style="color:green; font-weight:bold;">below 24</span>, the student is considered <span style="color:green; font-weight:bold;">'Normal'</span> with no significant risk of ADHD.
+       """, unsafe_allow_html=True)
 
 
 
