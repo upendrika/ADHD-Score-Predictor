@@ -475,7 +475,7 @@ elif app_mode == 'About':
       # Your photo and introduction
     col1, col2, col3 = st.columns([1, 1, 1])  # Center-align photo and details
     with col3:
-        st.image("ishara.jpeg", caption="Ishara Upendrika - Undergraduate", width=50, use_column_width=False)
+        st.image("ishara.jpeg", caption="Ishara Upendrika - Undergraduate", width=150)
 
-        
+
             
