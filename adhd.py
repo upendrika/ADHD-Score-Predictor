@@ -447,7 +447,7 @@ elif app_mode == 'About':
 
     st.markdown("""
     <div>
-        <h3 style='color: Black;'>Development Team</h3>
+        <h3 style='color: Black;'>Development</h3>
     </div>
                 
     """, unsafe_allow_html=True)
@@ -470,4 +470,12 @@ elif app_mode == 'About':
     st.write("""
         - For more details about this project, feel free to contact me at isharaupendrika22@gmail.com.
     """)
+
+
+      # Your photo and introduction
+    col1, col2, col3 = st.columns([1, 1, 1])  # Center-align photo and details
+    with col3:
+        st.image("ishara.jpeg", caption="Ishara Upendrika - Undergraduate", width=150, use_column_width=False)
+
+        
             
