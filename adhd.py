@@ -341,7 +341,7 @@ elif app_mode == 'Model Information':
     </div>
     """, unsafe_allow_html=True)
 
-    st.header('Dataset')
+    st.subheader('Dataset')
     st.write(
     """
     The model was trained using the dataset from Kaggle's ADHD and Mental Health dataset. 
@@ -354,7 +354,7 @@ elif app_mode == 'Model Information':
         "[Kaggle's ADHD and Mental Health Dataset](https://www.kaggle.com/datasets/xyz/adhd-mental-health)"
     )
     
-    st.header('Algorithms Used')
+    st.subheader('Algorithms Used')
     st.write(
         """
         The model uses a combination of the following supervised learning algorithms to make predictions based on the input data:
@@ -366,7 +366,7 @@ elif app_mode == 'Model Information':
         """
     )
     
-    st.header('Training Process')
+    st.subheader('Training Process')
     st.write(
         """
         The data was split into training and testing sets to evaluate model performance. 
@@ -374,7 +374,7 @@ elif app_mode == 'Model Information':
         """
     )
     
-    st.header('Performance Evaluation')
+    st.subheader('Performance Evaluation')
     st.write(
         """
         As this is a regression model, the following evaluation metrics were used to assess model performance:
